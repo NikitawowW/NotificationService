@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class NotificationController {
     private final NotificationService notificationService;
 
+    //TODO: сделать нормальный ответ
     @PostMapping()
     public ResponseEntity<String> sendNotify(@RequestBody NotificationDTO notifications) {
         log.info("Received http request with notifications: {}", notifications);

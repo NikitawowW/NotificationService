@@ -12,8 +12,8 @@ import org.springframework.stereotype.Service;
 public class KafkaNotifyProducer {
     private final KafkaTemplate<String, NotificationDTO> kafkaTemplate;
 
-    public void sendNotify(NotificationDTO notifications) {
-        kafkaTemplate.send("notifications", notifications);
+    public void sendNotify(NotificationDTO notifications, String topic) {
+        kafkaTemplate.send(topic, notifications);
         log.info("Notifications send to kafka, notifications: {}", notifications);
     }
 }
