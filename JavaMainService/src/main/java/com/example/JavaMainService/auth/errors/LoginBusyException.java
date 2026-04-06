@@ -1,7 +1,7 @@
 package com.example.JavaMainService.auth.errors;
 
-public class EmailBusyException extends RuntimeException {
-  public EmailBusyException(String message) {
-    super(message);
-  }
+public class LoginBusyException extends RuntimeException {
+    public LoginBusyException(String message) {
+        super(message);
+    }
 }

@@ -1,4 +1,6 @@
 package com.example.JavaMainService.auth.model;
 
-public record RegisterResponseDTO() {
+public record RegisterResponseDTO(
+    String message
+) {
 }

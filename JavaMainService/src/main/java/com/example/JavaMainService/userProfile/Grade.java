@@ -1,4 +1,4 @@
-package com.example.JavaMainService.user;
+package com.example.JavaMainService.userProfile;
 
 public enum Grade {
     Junior,
